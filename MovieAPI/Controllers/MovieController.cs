@@ -1,9 +1,7 @@
-﻿using Application.Common.Dto;
+﻿using Application.Movies.Command;
 using Application.Movies.Query;
-using Application.Movies.Command;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace MovieAPI.Controllers
 {
@@ -49,6 +47,5 @@ namespace MovieAPI.Controllers
         {
             return Ok(await Mediator.Send(command));
         }
-
     }
 }

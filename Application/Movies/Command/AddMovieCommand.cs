@@ -1,8 +1,6 @@
 ﻿using Application.Common.Dto;
-using Domain.Entities;
 using Infrastructure.Persistence;
 using MediatR;
-
 
 namespace Application.Movies.Command
 {
@@ -14,7 +12,7 @@ namespace Application.Movies.Command
     public class AddMovieCommandHandler : IRequestHandler<AddMovieCommand, Unit>
     {
         private readonly IMovieDbContext _dbContext;
- 
+
         public AddMovieCommandHandler(IMovieDbContext dbContext)
         {
             _dbContext = dbContext;

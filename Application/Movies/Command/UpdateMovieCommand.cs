@@ -1,8 +1,6 @@
 ﻿using Application.Common.Dto;
-using Domain.Entities;
 using Infrastructure.Persistence;
 using MediatR;
-
 
 namespace Application.Movies.Command
 {

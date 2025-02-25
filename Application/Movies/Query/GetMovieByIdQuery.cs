@@ -2,11 +2,6 @@
 using Infrastructure.Persistence;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Movies.Query
 {
@@ -18,6 +13,7 @@ namespace Application.Movies.Query
     public class GetMovieByIdQueryHandler : IRequestHandler<GetMovieByIdQuery, MovieDto>
     {
         private readonly IMovieDbContext _dbContext;
+
         public GetMovieByIdQueryHandler(IMovieDbContext dbContext)
         {
             _dbContext = dbContext;

@@ -1,11 +1,8 @@
-using Microsoft.OpenApi.Models;
+using Application.Movies.Command;
+using Application.Movies.Query;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.InMemory;
-using MediatR;
-using Application.Movies.Query;
-using Microsoft.Extensions.DependencyInjection;
-using Application.Movies.Command;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
